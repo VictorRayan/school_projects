@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title> Contact Us</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="contact_style.css">
+	</head>
+
+
+	<body>
+		<form id="frm_contact" method="POST" action="contact.php">
+			<label for="txtName">Name:</label>
+			<input type="text" id="txtName" name="txtName">
+
+			<label for="txtEmail">Email:</label>
+			<input type="text" id="txEmail" name="txtEmail">
+
+			<label for="txtTel">Phone:</label>
+			<input type="tel" id="txtTel" name="txtTel">
+
+			<label for="txtSite">Website:</label>
+			<input type="url" id="txtSite" name="txtSite">
+
+			<label for="txtBorn">Birthday:</label>
+			<input type="date" id="txtBorn" name="txtBorn">
+
+			<label for="optCar">Car:</label>
+			<select name="optCar" id="optCar">
+				<option value="Audi">Audi</option>
+				<opton value="Fiat">Fiat</option>
+				<option value="Tesla">Tesla</option>
+			</select>
+
+			<label for="txtObs">Observations:</label>
+			<input type="text" id="txtObs" name="txtObs">
+
+			<label for="ckNot">Do you wanna receive notifications?</label>
+			<input type="checkbox" value="">
+ 
+			<input type="submit" id="btnSend" name="btnSend" value="Send">
+			
+		</form>
+
+	</body>
+</html>
