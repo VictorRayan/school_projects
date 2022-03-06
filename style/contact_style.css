@@ -1,11 +1,3 @@
-@media (max-width: 600px){
-	
-
-	
-
-
-}
-
 @media (min-width: 601px){
 	
 
@@ -13,11 +5,11 @@
 	#frm_contact{
 
 		width: 50vw;
-		height: 95vh;
-		background-color: white;
+		height: 120vh;
+		background-color: rgba(255, 255, 255, 0.781);
 	}
 
-	#frm_contact label, #frm_contact input, #frm_contact button{
+	#frm_contact label, #frm_contact input, #frm_contact button, #frm_contact h1{
 
 		display: flex;
 		flex-direction: column;
@@ -26,14 +18,41 @@
 
 	}
 
-	#frm_contact label{
-		margin-left: 10px;
-		margin-right:  10px;
-		margin-top: 10px;
+	#frm_contact_elements{
+		margin: 1vw;
+		margin-left:10vw;
 	}
 
-
-
+	#frm_contact label{
+		margin-top: 3vh;
+	}
+	
+	#frm_contact input{
+		padding-right: 50%;
+	}
+	#frm_contact #inpBorn{ /*object ids are redundant here to go through semantic overlap calculation*/
+		padding-right: 0%;
+		margin-left:10vw;
+	}
+	#frm_contact label[for="inpBorn"]{
+		margin-left: 10vw;
+		margin-top:2vh;
+	}
+	#optCar{
+		padding-right: 72%;
+	}
+	#frm_contact h1{
+		margin-left:17vw;
+	}
+	#ckNewslatter{
+		height:2.5vh;
+		width:2.5vw;
+		margin-left: -1%;
+	}
+	#txtObs{
+		height: 15vh;
+		width: 31.75vw;
+	}
 }
 
 
@@ -44,10 +63,32 @@ body{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-color:  gray;
+	background-image: url(tesla_model.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 #btnSend{
 
-	background-color: skyblue;
-	color: white;
+	height:5vh;
+	width:5vw;
+	font-size: 120%;
+	border-radius: 6%;
+	border-width:0.3rem;
+	border-color:black;
+	background-color: white;
+	color: black;
+	margin-top: 5%;
+	margin-left: 15%;
+	vertical-align: center;
+	text-align: center;
+}
+
+#btnSend:hover{
+	background-color: black;
+	color:white;
+}
+
+#btnSend:active{
+	background-color: gray;
+	color:#000000c0
 }
