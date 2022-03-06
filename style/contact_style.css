@@ -1,62 +1,65 @@
-@media (min-width: 601px){
-	
+#frm_contact {
 
-
-	#frm_contact{
-
-		width: 50vw;
-		height: 120vh;
-		background-color: rgba(255, 255, 255, 0.781);
-	}
-
-	#frm_contact label, #frm_contact input, #frm_contact button, #frm_contact h1{
-
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-start;
-		align-items: flex-start;
-
-	}
-
-	#frm_contact_elements{
-		margin: 1vw;
-		margin-left:10vw;
-	}
-
-	#frm_contact label{
-		margin-top: 3vh;
-	}
-	
-	#frm_contact input{
-		padding-right: 50%;
-	}
-	#frm_contact #inpBorn{ /*object ids are redundant here to go through semantic overlap calculation*/
-		padding-right: 0%;
-		margin-left:10vw;
-	}
-	#frm_contact label[for="inpBorn"]{
-		margin-left: 10vw;
-		margin-top:2vh;
-	}
-	#optCar{
-		padding-right: 72%;
-	}
-	#frm_contact h1{
-		margin-left:17vw;
-	}
-	#ckNewslatter{
-		height:2.5vh;
-		width:2.5vw;
-		margin-left: -1%;
-	}
-	#txtObs{
-		height: 15vh;
-		width: 31.75vw;
-	}
+	width: 50vw;
+	height: 120vh;
+	background-color: rgba(255, 255, 255, 0.781);
 }
 
+#frm_contact label, #frm_contact input, #frm_contact button, #frm_contact h1 {
 
-body{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+
+}
+
+#frm_contact_elements {
+	margin: 1vw;
+	margin-left: 10vw;
+}
+
+#frm_contact label {
+	margin-top: 3vh;
+}
+
+#frm_contact input {
+	width: 31.75vw;
+}
+
+#frm_contact #inpBorn {
+	/*object ids are redundant here to go through semantic overlap calculation*/
+	padding-right: 0%;
+	margin-left: 10vw;
+	width: 10vw;
+}
+
+#frm_contact label[for="inpBorn"] {
+	margin-left: 10vw;
+	margin-top: 2vh;
+}
+
+#optCar {
+	width: 31.75vw;
+}
+
+#frm_contact h1 {
+	margin-left: 17vw;
+}
+
+#ckNewslatter {
+	height: 2.5vh;
+	width: 2.5vw;
+	position:relative;
+	left:-40%;
+}
+
+#txtObs {
+	height: 15vh;
+	width: 31.75vw;
+}
+
+body {
 
 	font-family: Arial, Helvetica;
 	display: flex;
@@ -67,14 +70,15 @@ body{
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-#btnSend{
 
-	height:5vh;
-	width:5vw;
+#frm_contact input[type="submit"]{
+
+	height: 5vh;
+	width: 15vw;
 	font-size: 120%;
 	border-radius: 6%;
-	border-width:0.3rem;
-	border-color:black;
+	border-width: 0.3rem;
+	border-color: black;
 	background-color: white;
 	color: black;
 	margin-top: 5%;
@@ -83,12 +87,12 @@ body{
 	text-align: center;
 }
 
-#btnSend:hover{
+#frm_contact input[type="submit"]:hover{
 	background-color: black;
-	color:white;
+	color: white;
 }
 
-#btnSend:active{
+#frm_contact input[type="submit"]:active{
 	background-color: gray;
-	color:#000000c0
+	color: #000000c0
 }
