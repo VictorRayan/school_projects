@@ -6,9 +6,8 @@ $inpBorn = $_POST['inpBorn'];
 $txtEmail = $_POST['txtEmail'];
 $txtTel = $_POST['txtTel'];
 $txtObs = $_POST['txtObs'];
-$ckNewslatter = $_POST['ckNewslatter'];
+$ckNewslatter = $_POST['cbChannel'];
 $optCar = $_POST['optCar'];
-
 
 echo "<br>Name: $txtName";
 echo "<br>Email: $txtEmail";
@@ -37,6 +36,13 @@ if (isset($ckNewslatter)){
 }else{
     echo "<br>Newslatter confirmation: not";
 }
+
+$channels = "";
+foreach($_POST['cbChannel'] as $values){
+    $channels.="\n".$values;
+}
+
+echo " ---> channels: $channels";
 
 
 

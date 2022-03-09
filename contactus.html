@@ -36,9 +36,13 @@
 
 			<label for="txtObs">Observations:</label>
 			<textarea id="txtObs" name="txtObs"></textarea>
-			<label for="ckNewslatter">Do you wanna receive notifications?</label>
-			<input type="checkbox" id="ckNewslatter" name="ckNewslatter" value="yes">
-
+			
+			<label for="cbChannel">Do you accept to receive notifications by:</label>
+			<select name="cbChannel[ ]" size="3" multiple="multiple">
+				<option value="sms">SMS</option>
+				<option value="email">Email</option>
+				<option value="facebook">Facebook</option>
+			</select>
 			<input type="submit" id="btnSend" name="btnSend" value="Send">
 			</div>
 		</form>
