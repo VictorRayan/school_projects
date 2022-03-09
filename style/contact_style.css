@@ -1,3 +1,4 @@
+
 #frm_contact {
 
 	width: 50vw;
@@ -47,11 +48,9 @@
 	margin-left: 17vw;
 }
 
-#ckNewslatter {
-	height: 2.5vh;
-	width: 2.5vw;
-	position:relative;
-	left:-40%;
+#frm_contact select[id="ckNewslatter"]{
+	height: 10.5vh;
+	width: 32.25vw;
 }
 
 #txtObs {
